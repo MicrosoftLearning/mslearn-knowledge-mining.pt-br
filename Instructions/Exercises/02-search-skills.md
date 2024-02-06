@@ -146,7 +146,7 @@ Para implementar a funcionalidade de contagem de palavras como habilidade person
     - **Nome do aplicativo de funções**: *um nome exclusivo*
     - **Publicar**: código
     - **Pilha de runtime** : Node.js
-    - **Versão**: 14 LTS
+    - **Versão**: 18 LTS
     - **Região**: *a mesma região que o recurso de Pesquisa de IA do Azure*
 
 2. Aguarde a conclusão da implantação e vá até o recurso de aplicativo de funções implantado.
