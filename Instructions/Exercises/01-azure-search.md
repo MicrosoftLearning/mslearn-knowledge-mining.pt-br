@@ -86,7 +86,7 @@ Agora que você tem os recursos necessários, pode carregar alguns documentos em
 3. Salve suas alterações e clique com o botão direito do mouse na pasta **01-azure-search** e abra um terminal integrado.
 4. Insira o comando a seguir para entrar em sua assinatura do Azure ao usar a CLI do Azure.
 
-    ```
+    ```powershell
     az login
     ```
 
@@ -94,7 +94,7 @@ Agora que você tem os recursos necessários, pode carregar alguns documentos em
 
 5. Insira o comando a seguir para executar o arquivo em lote. Isso criará um contêiner de blob em sua conta de armazenamento e carregará os documentos na pasta de **dados** para ele.
 
-    ```
+    ```powershell
     UploadDocs
     ```
 
@@ -243,7 +243,7 @@ Embora você possa usar o portal para criar e modificar soluções de pesquisa, 
 4. No Visual Studio Code, em **skillset.json**, substitua o espaço reservado **YOUR_COGNITIVE_SERVICES_KEY** pela chave dos Serviços de IA do Azure que você copiou para a área de transferência.
 5. Percorra o arquivo JSON, observando que ele inclui definições para as habilidades que você criou usando a interface do usuário da Pesquisa de IA do Azure no portal do Azure. Na parte inferior da lista de habilidades, uma habilidade adicional foi adicionada com a seguinte definição:
 
-    ```
+    ```json
     {
         "@odata.type": "#Microsoft.Skills.Text.V3.SentimentSkill",
         "defaultLanguageCode": "en",
@@ -279,7 +279,7 @@ Embora você possa usar o portal para criar e modificar soluções de pesquisa, 
 2. Percorra o índice e exiba as definições de campo. Alguns campos são baseados em metadados e conteúdo no documento de origem, e outros são resultados de habilidades no conjunto de habilidades.
 3. No final da lista de campos que você definiu no portal do Azure, observe que dois campos adicionais foram adicionados:
 
-    ```
+    ```json
     {
         "name": "sentiment",
         "type": "Edm.String",
@@ -306,19 +306,18 @@ Embora você possa usar o portal para criar e modificar soluções de pesquisa, 
 1. No Visual Studio Code, na pasta **modify-search**, abra **indexer.json**. Isso mostra uma definição JSON para **margies-indexer** que mapeia campos extraídos do conteúdo do documento e metadados (na seção **fieldMappings**) e valores extraídos por habilidades no conjunto de habilidades (na seção **outputFieldMappings**) para campos no índice.
 2. Na lista **fieldMappings**, observe o mapeamento do valor **metadata_storage_path** para o campo de chave codificada em base 64. Isso foi criado quando você atribuiu o **metadata_storage_path** como a chave e selecionou a opção para codificar a chave no portal do Azure. Além disso, um novo mapeamento mapeia explicitamente o mesmo valor para o campo **url**, mas sem a codificação Base-64:
 
-    ```
+    ```json
     {
         "sourceFieldName" : "metadata_storage_path",
         "targetFieldName" : "url"
-    }
-    
+    }    
     ```
 
     Todos os outros campos de metadados e conteúdo no documento de origem são mapeados implicitamente para campos de mesmo nome no índice.
 
 3. Revise a seção **ouputFieldMappings**, que mapeia os resultados das habilidades no conjunto de habilidades para os campos de índice. A maioria deles reflete as escolhas feitas na interface do usuário, mas o mapeamento a seguir foi adicionado para mapear o valor **sentimentLabel** extraído por sua habilidade de sentimento para o campo **sentimento** adicionado por você ao índice:
 
-    ```
+    ```json
     {
         "sourceFieldName": "/document/sentimentLabel",
         "targetFieldName": "sentiment"
@@ -330,7 +329,7 @@ Embora você possa usar o portal para criar e modificar soluções de pesquisa, 
 1. Clique com o botão direito do mouse na pasta **modify-search** e abra um terminal integrado.
 2. No painel de terminal da pasta ** modify-search**, digite o seguinte comando para executar o script **modify-search.cmd**, que envia as definições JSON para a interface REST e inicia a indexação.
 
-    ```
+    ```powershell
     ./modify-search
     ```
 
