@@ -157,7 +157,7 @@ Em seguida, você criará um ambiente personalizado para poder implantar em um p
 1. Selecione a guia **Pontos de extremidade personalizados**.
 1. Selecione **+ Criar**.
 1. Para **Nome**, insira **my-custom-environment**.
-1. Na lista de ambientes selecionados em **Selecionar tipo de ambiente**, selecione **automl-gpu:2**.
+1. Na lista de *Ambientes selecionados* em **Selecionar tipo de ambiente**, selecione a versão mais recente do **automl-gpu**.
 1. Selecione **Avançar**.
 1. No computador local, abra o arquivo `conda_env.yaml` baixado anteriormente e copie o conteúdo dele.
 1. Retorne ao navegador e selecione **conda_dependencies.yaml** no painel Personalizar.
@@ -175,7 +175,7 @@ O cluster de inferência agora deve estar pronto para uso. Você também editou 
 1. Selecione **Implantar** e selecione **Ponto de extremidade em tempo real**.
 
     ![Uma captura de tela do painel Selecionar ponto de extremidade.](../media/06-media/04-select-endpoint.png)
-1. Para **Nome**, insira **car-evaluation-endpoint**.
+1. Em **Nome**, insira um nome exclusivo, por exemplo, **car-evaluation-endpoint-1440637584**.
 1. Para o **Tipo de computação**, selecione **Gerenciada**.
 1. Para o **Tipo de autenticação**, selecione **Autenticação baseada em chave**.
 1. Selecione **Avançar** e, em seguida, selecione **Avançar**.
@@ -231,7 +231,7 @@ Aguarde a implantação do modelo, que pode demorar até 10 minutos. Você pode 
 
     ```json
     {
-        "predicted_price": 5790.948226933133
+        "predicted_price": 5852.823214312815
     }
     ```
 
@@ -300,15 +300,15 @@ Em seguida, você cria um novo serviço do Cognitive Search e enriquece um índi
 ### Criar um recurso do Azure AI Search
 
 1. No portal do Azure, na página inicial, selecione **+ Criar um recurso**.
-1. Pesquise por **pesquisa** e, em seguida, selecione **Pesquisa de IA do Azure**.
+1. Pesquise por **Pesquisa de IA do Azure** e, em seguida, selecione **Pesquisa de IA do Azure**.
 1. Selecione **Criar**.
 1. Em **Grupo de recursos**, selecione **aml-for-acs-enrichment**.
-1. Em Nome do serviço, insira **acs-enriched**.
+1. Em Nome do serviço, insira um nome exclusivo, por exemplo, **acs-enriched-1440637584**.
 1. Para **Localização**, selecione a mesma região usada anteriormente.
 1. Selecione **Examinar + criar**e **Criar**.
 1. Aguarde a implantação dos recursos e selecione **Acessar grupo de recursos**.
 1. Selecione **Importar dados**.
-1. No painel **Conectar aos seus dados**, para o campo **Nome da fonte de dados**, selecione o Armazenamento de Blobs do Azure.
+1. No painel **Conectar aos seus dados**, para o campo **Nome da fonte de dados**, selecione o **Armazenamento de Blobs do Azure**.
 1. Em **Nome da fonte de dados**, insira **import-docs**.
 1. Em **Modo de análise**, selecione **JSON**.
 1. Em **Cadeia de conexão**, selecione **Escolher conexão existente**.
