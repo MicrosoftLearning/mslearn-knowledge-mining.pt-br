@@ -39,14 +39,14 @@ Você desenvolverá seu aplicativo de pesquisa usando o Visual Studio Code. Os a
 1. Clique com o botão direito do mouse na pasta **02-search-skill** e selecione **Abrir no terminal integrado**.
 1. No painel do terminal, digite o comando a seguir para estabelecer uma conexão autenticada com a sua assinatura do Azure.
 
-    ```
+    ```powershell
     az login --output none
     ```
 
 8. Quando solicitado, selecione ou entre em sua assinatura do Azure. Em seguida, retorne para o Visual Studio Code e aguarde a conclusão do processo de entrada.
 9. Use o comando a seguir para listar os locais do Azure.
 
-    ```
+    ```powershell
     az account list-locations -o table
     ```
 
@@ -54,7 +54,7 @@ Você desenvolverá seu aplicativo de pesquisa usando o Visual Studio Code. Os a
 11. No script **setup.cmd**, modifique as declarações de variáveis de ** subscription_id**, **resource_group** e **local** com os valores apropriados para sua ID de assinatura, nome do grupo de recursos e nome do local. Em seguida, salve as alterações.
 12. No terminal da pasta **02-search-skill**, insira o seguinte comando para executar o script:
 
-    ```
+    ```powershell
     ./setup
     ```
 
@@ -109,7 +109,7 @@ Neste exercício, você usará a interface REST da Pesquisa de IA do Azure para 
 14. Clique com o botão direito do mouse no nome da pasta **create-search** e selecione **Abrir no terminal integrado**.
 15. No painel do terminal da pasta **create-index**, digite o seguinte comando para executar o script em lote.
 
-    ```
+    ```powershell
     ./create-search
     ```
 
@@ -150,7 +150,7 @@ Para implementar a funcionalidade de contagem de palavras como habilidade person
     - **Região**: *a mesma região que o recurso de Pesquisa de IA do Azure*
 
 2. Aguarde a conclusão da implantação e vá até o recurso de aplicativo de funções implantado.
-3. Na página de visão geral do aplicativo de funções, na seção mais abaixo na página, selecione a guia **Funções**. Em seguida, crie uma nova função no portal com as seguintes configurações:
+3. Na página de **Visão Geral**, selecione a opção **Criar no portal do Azure** para criar uma nova função com as seguintes configurações:
     - **Configurar um ambiente de desenvolvimento**"
         - **Ambiente de desenvolvimento**: desenvolver no portal
     - **Selecione um modelo**"
@@ -262,7 +262,7 @@ module.exports = async function (context, req) {
 6. Salve a função e então abra o painel **Teste/execução**.
 7. No painel **Testar/Executar**, substitua o **Corpo** existente pelo seguinte JSON, que reflete o esquema esperado por uma habilidade da Pesquisa de IA do Azure na qual os registros que contêm dados de um ou mais documentos são enviados para processamento:
 
-    ```
+    ```json
     {
         "values": [
             {
@@ -284,10 +284,10 @@ module.exports = async function (context, req) {
         ]
     }
     ```
-    
+
 8. Clique em **Executar** e veja o conteúdo da resposta HTTP retornado pela função. Ele reflete o esquema esperado pela Pesquisa de IA do Azure ao consumir uma habilidade, em que uma resposta para cada documento é retornada. Nesse caso, a resposta é composta por até dez termos em cada documento na ordem decrescente da frequência com que aparecem:
 
-    ```
+    ```json
     {
         "values": [
         {
@@ -348,7 +348,7 @@ Agora você precisa incluir sua função como uma habilidade personalizada no co
 13. Clique com o botão direito do mouse na pasta **update-search** e selecione **Abrir em terminal integrado**.
 14. No painel de terminal da pasta **update-search**, digite o seguinte comando executar o script em lote.
 
-    ```
+    ```powershell
     ./update-search
     ```
 
