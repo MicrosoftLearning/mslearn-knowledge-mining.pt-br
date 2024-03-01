@@ -167,8 +167,7 @@ Esse hotel correspondeu ao termo "lago" no campo `HotelName` e à vista no campo
 
 ### Testar o índice atualizado
 
-1. Na parte superior da página, selecione o serviço de pesquisa, link **advanced-search-service-12345 | Indexes**.
-1. No painel **Visão geral**, selecione **Índices** e escolha **hotels-sample-index**.
+1. Retorne à guia **Gerenciador de pesquisa** da página **hotels-sample-index**.
 1. Em **Cadeia de consulta**, insira a mesma pesquisa de antes:
 
     `lake + view&$select=HotelName,Description,Category,Tags&$count=true`
