@@ -15,7 +15,7 @@ Neste exercício, você criará uma solução da Pesquisa de IA do Azure, import
 
 Antes de começar a usar uma Sessão de Depuração, você precisa criar um serviço do Azure Cognitive Search.
 
-1. [![Botão de implantação de recursos do Azure.](../media/08-media/deploy-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure-Samples%2Fazure-search-knowledge-mining%2Fmaster%2Fazuredeploy.json) selecione este botão para implantar todos os recursos necessários no portal do Azure.
+1. [Implantar recursos no Azure](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure-Samples%2Fazure-search-knowledge-mining%2Fmain%2Fazuredeploy.json) – selecione este link para implantar todos os recursos necessários no portal do Azure.
 
     ![Uma captura de tela do modelo de implantação do ARM com os campos inseridos.](../media/08-media/arm-template-deployment.png)
 
@@ -117,7 +117,7 @@ Agora, o indexador começará a ingerir 50 documentos. No entanto, se você veri
 1. Agora você precisa certificar-se de que seu conjunto de habilidades esteja anexado a um recurso dos Serviços de IA do Azure, caso contrário, você atingirá a cotação básica e o indexador atingirá o tempo limite. Para fazer isso, selecione **Conjunto de habilidades** no painel esquerdo e, em seguida, selecione seu **hotels-sample-skillset**.
 
     ![Uma captura de tela mostrando a lista de habilidades.](../media/08-media/update-skillset.png)
-1. Selecione a guia Serviços** de IA** e, em seguida, selecione o recurso de serviços de IA na lista.
+1. Selecione **Conectar Serviço de IA**, depois selecione o recurso de serviços de IA na lista.
 
     ![Uma captura de tela mostrando o recurso Serviços de IA do Azure a ser anexado ao conjunto de habilidades.](../media/08-media/skillset-attach-service.png)
 1. Selecione **Salvar**.
