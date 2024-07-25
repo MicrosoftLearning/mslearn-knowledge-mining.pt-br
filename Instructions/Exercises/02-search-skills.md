@@ -28,7 +28,7 @@ Você desenvolverá seu aplicativo de pesquisa usando o Visual Studio Code. Os a
 > **Observação**: se você tiver concluído anteriormente o exercício **[Criar uma solução de Pesquisa de IA do Azure](01-azure-search.md)** e ainda tiver esses recursos do Azure em sua assinatura, poderá ignorar esta seção e começar na seção **Criar uma solução de pesquisa**. Caso contrário, siga as etapas abaixo para provisionar os recursos necessários do Azure:
 
 1. Em um navegador da web, abra o portal do Azure em `https://portal.azure.com` e entre usando a conta Microsoft associada à sua assinatura do Azure.
-2. Na barra de pesquisa superior, pesquise *serviços de IA do Azure*, selecione **Serviços de IA do Azure** e crie um recurso de conta multisserviço dos serviços de IA do Azure com as seguintes configurações:
+2. Na barra de pesquisa superior, pesquise *Serviços de IA do Azure*, clique em **Conta multisserviço dos Serviços de IA do Azure** e crie um recurso de conta multisserviço dos serviços de IA do Azure com as seguintes configurações:
     - **Assinatura**: *sua assinatura do Azure*
     - **Grupo de recursos**: *escolha ou crie um grupo de recursos (se você estiver usando uma assinatura restrita, talvez não tenha permissão para criar um novo grupo de recursos; use o que foi fornecido)*
     - **Região**: *Escolha entre regiões disponíveis geograficamente próximas a você*
@@ -371,6 +371,13 @@ Agora que você tem um índice, você pode pesquisá-lo.
     ```
 
     Esta consulta recupera os campos **url** e **top_words** de todos os documentos que mencionam *Las Vegas*.
+
+## Excluir os recursos do exercício
+
+Agora que você concluiu o exercício, exclua todos os recursos de que não precisa mais. Exclua os recursos do Azure:
+
+1. No **portal do Azure**, selecione Grupos de recursos.
+1. Selecione o grupo de recursos que você não precisa e, em seguida, selecione **Excluir grupo de recursos**.
 
 ## Mais informações
 
