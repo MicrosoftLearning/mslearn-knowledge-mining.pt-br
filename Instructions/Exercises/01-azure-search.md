@@ -39,7 +39,7 @@ A solução que você criará para a Margie's Travel requer os seguintes recurso
 
 Caso ainda não tenha um na sua assinatura, precisará provisionar um recurso dos **Serviços de IA do Azure**. Sua solução de pesquisa usará isso para enriquecer os dados no armazenamento de dados com insights gerados pela IA.
 
-1. Volte para a página inicial do portal do Azure e selecione o botão **&#65291;Criar um recurso**, pesquise *Serviços de IA do Azure* e crie um recurso de **Serviços de IA do Azure** com as seguintes configurações:
+1. Volte para a home page do portal do Azure e clique no botão **&#65291;Criar um recurso**, pesquise *Serviços de IA do Azure* e crie um recurso de **conta multisserviço dos Serviços de IA do Azure** com as seguintes configurações:
     - **Assinatura**: *sua assinatura do Azure*
     - **Grupo de recursos**: *o mesmo grupo de recursos do recurso da Pesquisa de IA do Azure*
     - **Região**: *a mesma localização do recurso da Pesquisa de IA do Azure*
@@ -460,6 +460,13 @@ O aplicativo Web já inclui código para processar e renderizar os resultados da
     - **arranha-céu** (observe que essa palavra não aparece no conteúdo real de nenhum documento, mas é encontrada nas *legendas de imagem * e *tags de imagem* que foram geradas para imagens em alguns documentos).
     - **Deserto de Mojave** (observe que este termo é identificado como um *local* em alguns documentos).
 10. Feche a guia do navegador que contém o site da Margie's Travel e volte para o Visual Studio Code. Em seguida, no terminal do Python da pasta **margies-travel** (em que o aplicativo dotnet flask está em execução), pressione Ctrl+C para interromper o aplicativo.
+
+## Excluir os recursos do exercício
+
+Agora que você concluiu o exercício, exclua todos os recursos de que não precisa mais. Exclua os recursos do Azure:
+
+1. No **portal do Azure**, selecione Grupos de recursos.
+1. Selecione o grupo de recursos que você não precisa e, em seguida, selecione **Excluir grupo de recursos**.
 
 ## Mais informações
 
