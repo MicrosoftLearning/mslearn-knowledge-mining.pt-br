@@ -95,7 +95,7 @@ Agora que você tem os recursos necessários, pode carregar alguns documentos em
 5. Insira o comando a seguir para executar o arquivo em lote. Isso criará um contêiner de blob em sua conta de armazenamento e carregará os documentos na pasta de **dados** para ele.
 
     ```powershell
-    UploadDocs
+    .\UploadDocs.cmd
     ```
 
 ## Indexar os documentos
@@ -153,7 +153,7 @@ Agora que os documentos estão no lugar, você pode criar uma solução de pesqu
     1. Extrai os campos de metadados do documento e o conteúdo da fonte de dados
     2. Executa o conjunto de habilidades cognitivas para gerar campos enriquecidos adicionais
     3. Mapeia os campos extraídos para o índice.
-15. Na metade inferior da página **Visão geral** do recurso de Pesquisa de IA do Azure, veja a guia **Indexadores**, que deve mostrar o **margies-indexer** recém-criado. Aguarde alguns minuto e clique em **&orarr; Atualizar** até que o **Status** indique êxito.
+15. No lado esquerdo, exiba a **página Indexadores**, que mostrará o ** margies-indexer** recém-criado. Aguarde alguns minuto e clique em **&orarr; Atualizar** até que o **Status** indique êxito.
 
 ## Pesquisar o índice
 
