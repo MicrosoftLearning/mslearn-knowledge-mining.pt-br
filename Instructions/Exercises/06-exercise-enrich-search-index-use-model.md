@@ -54,6 +54,7 @@ Agora você criará um modelo de regressão e o treinará usando um pipeline do 
 
     ![Uma captura de tela mostrando o pipeline pronto e o botão “Enviar” realçado.](../media/06-media/submit-pipeline.png)
 1. Selecione **Noções básicas** no painel **Definir o trabalho de pipeline**.
+   > Observação: se você ocultou o painel **Configurar o trabalho de pipeline**, poderá abri-lo novamente selecionando **Configurar e enviar**.
 1. Selecione **Criar novo** no nome do experimento.
 1. Em **Nome do novo experimento**, insira **linear-regression-training**.
 1. Selecione **Examinar + Enviar** e, em seguida, selecione **Enviar**.
