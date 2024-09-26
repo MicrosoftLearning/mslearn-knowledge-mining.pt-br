@@ -56,7 +56,7 @@ Caso ainda não tenha um na sua assinatura, precisará provisionar um recurso do
     - **Nome da conta de armazenamento**: *insira um nome exclusivo*.
     - **Região**: *escolha uma região disponível*
     - **Desempenho**: padrão
-    - **Replicação**: LRS (armazenamento com redundância local)
+    - **Redundância**: LRS (armazenamento com redundância local)
     - Na guia **Avançado**, marque a caixa ao lado de *Permitir habilitação de acesso anônimo em contêineres individuais*
 2. Aguarde a conclusão da implantação e acesse o recurso implantado.
 3. Na página **Visão geral**, observe a **ID da assinatura** – ela identifica a assinatura em que a conta de armazenamento é provisionada.
@@ -231,7 +231,7 @@ Embora você possa usar o portal para criar e modificar soluções de pesquisa, 
 1. No portal do Azure, retorne à página ** Visão geral** do seu recurso de Pesquisa de IA do Azure e, na seção superior da página, localize a **URL** do seu recurso (que se parece com **https://resource_name.search.windows.net**) e copie-a para a área de transferência.
 2. No Visual Studio Code, no painel do Explorer, expanda a pasta **01-azure-search** e sua subpasta **modify-search** e selecione **modify-search.cmd** para abri-la. Você usará esse arquivo de script para executar comandos *cURL* que enviam JSON para a interface REST do Serviço de IA do Azure.
 3. Em **modify-search.cmd**, substitua o espaço reservado **YOUR_SEARCH_URL** pela URL copiada para a área de transferência.
-4. No portal do Azure, exiba a página **Chaves** do seu recurso de Pesquisa de IA do Azure e copie a **chave de administrador primária** para a área de transferência.
+4. No portal do Azure, na seção **Configurações**, exiba a página **Chaves** do recurso de Pesquisa de IA do Azure e copie a **Chave de administração primária** para a área de transferência.
 5. No Visual Studio Code, substitua o espaço reservado **YOUR_ADMIN_KEY** pela chave que você copiou para a área de transferência.
 6. Salve as alterações em **modify-search.cmd** (mas não execute ainda!)
 
@@ -239,7 +239,7 @@ Embora você possa usar o portal para criar e modificar soluções de pesquisa, 
 
 1. No Visual Studio Code, na pasta ** modify-search**, abra **skillset.json**. Isso mostra uma definição JSON para **margies-skillset**.
 2. Na parte superior da definição do conjunto de habilidades, observe o objeto **cognitiveServices**, que é usado para conectar seu recurso dos Serviços de IA do Azure ao conjunto de habilidades.
-3. No portal do Azure, abra seu recurso de Serviços de IA do Azure (<u>não</u> seu recurso de Pesquisa de IA do Azure!) e exiba sua página **Chaves**. Em seguida copie a **Chave 1** para a área de transferência.
+3. No portal do Azure, abra o recurso Serviços de IA do Azure (e <u>não</u> o recurso Pesquisa de IA do Azure.) e, na seção **Gerenciamento de recursos**, exiba a página **Chaves e Ponto de Extremidade**. Em seguida, copie a **CHAVE 1** para a área de transferência.
 4. No Visual Studio Code, em **skillset.json**, substitua o espaço reservado **YOUR_COGNITIVE_SERVICES_KEY** pela chave dos Serviços de IA do Azure que você copiou para a área de transferência.
 5. Percorra o arquivo JSON, observando que ele inclui definições para as habilidades que você criou usando a interface do usuário da Pesquisa de IA do Azure no portal do Azure. Na parte inferior da lista de habilidades, uma habilidade adicional foi adicionada com a seguinte definição:
 
@@ -375,13 +375,13 @@ Agora que você tem um índice útil, você pode usá-lo a partir de um aplicati
     **C#**
 
     ```
-    dotnet add package Azure.Search.Documents --version 11.1.1
+    dotnet add package Azure.Search.Documents --version 11.6.0
     ```
 
     **Python**
 
     ```
-    pip install azure-search-documents==11.0.0
+    pip install azure-search-documents==11.5.1
     ```
 
 3. Exiba o conteúdo da pasta **margies-travel** e observe que ela contém um arquivo para definições de configuração:
@@ -461,7 +461,7 @@ O aplicativo Web já inclui código para processar e renderizar os resultados da
     - **Deserto de Mojave** (observe que este termo é identificado como um *local* em alguns documentos).
 10. Feche a guia do navegador que contém o site da Margie's Travel e volte para o Visual Studio Code. Em seguida, no terminal do Python da pasta **margies-travel** (em que o aplicativo dotnet flask está em execução), pressione Ctrl+C para interromper o aplicativo.
 
-## Excluir os recursos do exercício
+## Limpar
 
 Agora que você concluiu o exercício, exclua todos os recursos de que não precisa mais. Exclua os recursos do Azure:
 

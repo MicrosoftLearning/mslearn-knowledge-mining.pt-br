@@ -176,9 +176,9 @@ O cluster de inferência agora deve estar pronto para uso. Você também editou 
 1. Selecione **Implantar** e selecione **Ponto de extremidade em tempo real**.
 
     ![Uma captura de tela do painel Selecionar ponto de extremidade.](../media/06-media/04-select-endpoint.png)
-1. Em **Nome**, insira um nome exclusivo, por exemplo, **car-evaluation-endpoint-1440637584**.
+1. Em **Nome do ponto de extremidade**, insira um nome exclusivo, por exemplo, **car-evaluation-endpoint-1440637584**.
 1. Para o **Tipo de computação**, selecione **Gerenciada**.
-1. Para o **Tipo de autenticação**, selecione **Autenticação baseada em chave**.
+1. Em **Tipo de autenticação**, selecione **baseada em chave**.
 1. Selecione **Avançar** e, em seguida, selecione **Avançar**.
 1. Selecione **Avançar** novamente.
 1. No campo **Selecionar um script de pontuação para inferência**, navegue até o arquivo `score.py` atualizado e selecione-o.
@@ -462,7 +462,7 @@ Agora, substitua o enriquecimento de nomes de pessoas pelo conjunto de habilidad
 
 ### Atualizar os mapeamentos do campo de saída
 
-1. Volte para o painel **Visão geral**, selecione **Indexadores** e selecione **azureblob-indexer**.
+1. Volte para o painel **Visão geral** do seu serviço de pesquisa, selecione **Indexadores** e escolha **azureblob-indexer**.
 1. Selecione a guia **Definição do indexador (JSON)** e altere o valor **outputFieldMappings** para:
 
     ```json
@@ -486,9 +486,9 @@ O conjunto de habilidades atualizado agora adicionará um valor previsto ao docu
 1. Selecione **Pesquisar**.
 1. Role até a parte inferior dos resultados.
     ![Uma captura de tela mostrando o campo de preço previsto do carro adicionado aos resultados da pesquisa.](../media/06-media/test-results-search-explorer.png)
-Você deve ver o campo de preenchimento `predicted_price`.
+Você deve ver o campo `predicted_price` preenchido.
 
-## Excluir os recursos do exercício
+## Limpar
 
 Agora que você concluiu o exercício, exclua todos os recursos de que não precisa mais. Exclua os recursos do Azure:
 
