@@ -74,3 +74,7 @@ Você deverá ver um código de status do tipo **200** para mostrar que sua soli
 1. Selecione a guia **Corpo** para ver a resposta e exibir os resultados.
 
 Você deverá ver um código de status do tipo **200** para uma solicitação bem-sucedida.
+
+### Limpar
+
+Agora que você concluiu o exercício, exclua todos os recursos de que não precisa mais. Comece com o código clonado em seu computador. Em seguida, exclua os recursos do Azure.

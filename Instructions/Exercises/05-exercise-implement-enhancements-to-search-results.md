@@ -190,7 +190,7 @@ Esse hotel correspondeu ao termo "lago" no campo `HotelName` e à vista no campo
 
     A pontuação de pesquisa aumentou, de **0,9433406** para **3,5707965**. No entanto, todos os outros hotéis têm pontuações calculadas mais altas. Este hotel é agora o último nos resultados.
 
-## Excluir os recursos do exercício
+## Limpar
 
 Agora que você concluiu o exercício, exclua todos os recursos de que não precisa mais.
 

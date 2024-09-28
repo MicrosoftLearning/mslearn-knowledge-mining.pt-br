@@ -141,22 +141,21 @@ Para implementar a funcionalidade de contagem de palavras como habilidade person
 > **Observação**: neste exercício, você criará uma função Node.JS simples usando os recursos de edição de código no portal do Azure. Em uma solução de produção, você normalmente usaria um ambiente de desenvolvimento, como o Visual Studio Code, para criar um aplicativo de função em sua linguagem preferida (por exemplo, C#, Python, Node.JS ou Java) e publicá-lo no Azure como parte de um processo de DevOps.
 
 1. No Portal do Azure, na **página inicial** , crie um novo recurso **Aplicativo de funções** com as seguintes configurações:
+    - **Plano de hospedagem**: consumo
     - **Assinatura**: *Sua assinatura*
     - **Grupo de recursos**: *o mesmo grupo de recursos do recurso que o seu recurso de Pesquisa de IA do Azure*
     - **Nome do aplicativo de funções**: *um nome exclusivo*
-    - **Publicar**: código
     - **Pilha de runtime** : Node.js
     - **Versão**: 18 LTS
     - **Região**: *a mesma região que o recurso de Pesquisa de IA do Azure*
+    - **Sistema operacional**: Windows
 
 2. Aguarde a conclusão da implantação e vá até o recurso de aplicativo de funções implantado.
-3. Na página de **Visão Geral**, selecione a opção **Criar no portal do Azure** para criar uma nova função com as seguintes configurações:
-    - **Configurar um ambiente de desenvolvimento**"
-        - **Ambiente de desenvolvimento**: desenvolver no portal
-    - **Selecione um modelo**"
-        - **Modelo**: gatilho de HTTP
+3. Na página **Visão geral**, selecione **Criar função** na parte inferior da página para criar uma nova função com as seguintes configurações:
+    - **Selecionar um modelo**
+        - **Modelo**: gatilho de HTTP    
     - **Detalhes do modelo**:
-        - **Nova função**: contagem de palavras
+        - **Nome da função**: wordcount
         - **Nível de autorização**: função
 4. Aguarde até a função *contagem de palavras* ser criada. Em seguida, em sua página, selecione a guia **Código + Teste**.
 5. Substitua o código padrão da função pelo seguinte código:
@@ -372,7 +371,7 @@ Agora que você tem um índice, você pode pesquisá-lo.
 
     Esta consulta recupera os campos **url** e **top_words** de todos os documentos que mencionam *Las Vegas*.
 
-## Excluir os recursos do exercício
+## Limpar
 
 Agora que você concluiu o exercício, exclua todos os recursos de que não precisa mais. Exclua os recursos do Azure:
 

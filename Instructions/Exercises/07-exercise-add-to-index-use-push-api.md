@@ -162,7 +162,7 @@ Você pode pesquisar e verificar se os documentos foram adicionados ao índice n
 
 ![Uma captura de tela que mostra o índice de pesquisa com 100 mil documentos.](../media/07-media/check-search-service-index.png)
 
-### Excluir os recursos do exercício
+### Limpar
 
 Agora que você concluiu o exercício, exclua todos os recursos de que não precisa mais. Comece com o código clonado em seu computador. Em seguida, exclua os recursos do Azure.
 
