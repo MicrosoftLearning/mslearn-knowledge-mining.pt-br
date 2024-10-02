@@ -13,7 +13,7 @@ Neste exercício, você adicionará um classificador semântico a um índice e u
 
 1. Abra o portal do Azure e entre em sua conta.
 1. Selecione **Todos os recursos** e selecione o serviço de pesquisa.
-1. No painel de navegação, selecione **Classificador semântico (versão prévia)**.
+1. No painel de navegação, selecione **Classificador semântico**.
 1. Em **Disponibilidade**, na opção **Gratuito**, selecione **Selecionar Plano**.
 
 ![Captura de tela da caixa de diálogo do Classificador semântico.](../media/semantic-search/semanticsearch.png)
