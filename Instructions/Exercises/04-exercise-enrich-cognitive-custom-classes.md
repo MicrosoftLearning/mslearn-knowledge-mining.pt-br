@@ -127,8 +127,8 @@ Este exercício usa 210 arquivos de texto que contêm sinopses de filmes. Os nom
 
 1. Em **Nome**, insira **movie-genre-classifier**.
 1. Em **Idioma principal do texto**, selecione **Inglês (EUA)**.
-1. Em **Descrição**, insira **Um modelo capaz de identificar um gênero de filme com base na sinopse**.
 1. Selecione **Sim, habilitar o conjunto de dados multilíngue**.
+1. Em **Descrição**, insira **Um modelo capaz de identificar um gênero de filme com base na sinopse**.
 1. Selecione **Avançar**.
 
     ![Uma captura de tela mostrando a seleção do contêiner contendo dados de exemplo.](../media/04-media/choose-container.png)
@@ -485,7 +485,7 @@ Cada documento no índice deve ter um novo campo `textclass` que pode ser pesqui
 
 Agora que você concluiu o exercício, exclua todos os recursos de que não precisa mais.
 
-### Excluir os recursos do exercício
+### Limpar
 
 1. No portal do Azure, vá para a home page e selecione **Grupos de recursos**.
 1. Selecione os grupos de recursos que você não precisa e, em seguida, selecione **Excluir grupo de recursos**.

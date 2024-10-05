@@ -216,7 +216,7 @@ As projeções de *tabela* definidas no conjunto de habilidades formam um esquem
 
 A capacidade de criar projeções de *tabela* permite que você crie soluções analíticas e de relatório que consultam o esquema relacional, por exemplo, usando o Microsoft Power BI. As colunas de chave geradas automaticamente podem ser usadas para unir as tabelas em consultas – por exemplo, para retornar todos os locais mencionados em um documento específico.
 
-## Excluir os recursos do exercício
+## Limpar
 
 Agora que você concluiu o exercício, exclua todos os recursos de que não precisa mais. Exclua os recursos do Azure:
 
