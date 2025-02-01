@@ -315,7 +315,7 @@ Embora você possa usar o portal para criar e modificar soluções de pesquisa, 
 
     Todos os outros campos de metadados e conteúdo no documento de origem são mapeados implicitamente para campos de mesmo nome no índice.
 
-3. Revise a seção **ouputFieldMappings**, que mapeia os resultados das habilidades no conjunto de habilidades para os campos de índice. A maioria deles reflete as escolhas feitas na interface do usuário, mas o mapeamento a seguir foi adicionado para mapear o valor **sentimentLabel** extraído por sua habilidade de sentimento para o campo **sentimento** adicionado por você ao índice:
+3. Revise a seção **outputFieldMappings**, que mapeia os resultados das habilidades no conjunto de habilidades para os campos de índice. A maioria deles reflete as escolhas feitas na interface do usuário, mas o mapeamento a seguir foi adicionado para mapear o valor **sentimentLabel** extraído por sua habilidade de sentimento para o campo **sentimento** adicionado por você ao índice:
 
     ```json
     {

@@ -157,6 +157,9 @@ Para implementar a funcionalidade de contagem de palavras como habilidade person
     - **Detalhes do modelo**:
         - **Nome da função**: wordcount
         - **Nível de autorização**: função
+
+    > **Observação**: se você receber um erro de Criação de Função, atualize a página e o recurso será criado conforme o esperado.
+
 4. Aguarde até a função *contagem de palavras* ser criada. Em seguida, em sua página, selecione a guia **Código + Teste**.
 5. Substitua o código padrão da função pelo seguinte código:
 
