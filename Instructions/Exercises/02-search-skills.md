@@ -146,9 +146,11 @@ Para implementar a funcionalidade de contagem de palavras como habilidade person
     - **Grupo de recursos**: *o mesmo grupo de recursos do recurso que o seu recurso de Pesquisa de IA do Azure*
     - **Nome do aplicativo de funções**: *um nome exclusivo*
     - **Pilha de runtime** : Node.js
-    - **Versão**: 18 LTS
+    - **Versão**: 20 LTS
     - **Região**: *a mesma região que o recurso de Pesquisa de IA do Azure*
     - **Sistema operacional**: Windows
+
+>**Observação**: se a região em que você criou o recurso Pesquisa de IA do Azure não tiver cota disponível para implantar o recurso Aplicativo de Funções, você poderá escolher uma região diferente em que sua assinatura tenha cota disponível para implantação.
 
 2. Aguarde a conclusão da implantação e vá até o recurso de aplicativo de funções implantado.
 3. Na página **Visão geral**, selecione **Criar função** na parte inferior da página para criar uma nova função com as seguintes configurações:
